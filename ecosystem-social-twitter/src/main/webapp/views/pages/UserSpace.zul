@@ -1,0 +1,63 @@
+<zk xmlns="http://www.zkoss.org/2005/zul">
+<include src="/views/pages/MenuBar.zul"/>
+<borderlayout id="b" vflex="1" apply="uk.ac.dotrural.tweetdesk.controller.UserSpaceController">
+    <north id="n" size="100px" border="0"> <div>
+    <include src="/views/pages/banner.zul"/>
+    </div></north>    
+    
+    <west id="w" width="200px" title="Navigation" splittable="true" margins="0,5,0,0" autoscroll="true">    
+        <div> 
+       
+            <panel width="100%" border="normal"  sclass="menuPanel"> 
+                <panelchildren style="padding:5px; line-height: 18px; font-size: 16px; ">
+                    <vbox>  <include src=""/>
+                        <toolbarbutton id="home" label="Home" disabled="true" image="/images/home.png" width="250px"/>
+                        <toolbarbutton id="config" label="Configurations" image="/images/settings.png" width="250px"/>
+                        <toolbarbutton id="tweet" label="Analyze Tweets" image="/images/settings.png" width="250px"/>
+                        <toolbarbutton id="dBoard" label="Dash Board" image="/images/notes.png" width="250px"/>
+                        <toolbarbutton label="Sign out" href="/logout" image="/images/training.png" width="250px"/>
+                    </vbox>
+                </panelchildren>
+            </panel>  
+                     
+        <div style="font-size:16pt;
+			font-family:times new roman;
+			font-weight:bold;
+			font-style:italic;
+			color:#23238e;
+			
+			 border: 1px solid #E9E3DD;
+    float: left;
+    padding: 20px 2px 10px 10px;
+    text-align: left;
+    position:relative;
+			
+        ">        	
+        	Univeristy of Aberdeen
+        	<image src="/images/Abedeen_logo.png" width="100%" height="100%" />        	
+        </div>
+        </div>     
+    </west>
+    
+    <east width="300px" id="eastlayout" title="Robot Controls" margins="0,5,0,0" collapsible="false" visible="false" autoscroll="true"  >                
+		<div> <include src="/views/pages/Home.zul"/> </div>
+    </east>
+    
+    <center id="contentTitle" title="Home" autoscroll="true">      	
+    		<iframe id="mainContent" src="/views/pages/Home.zul" width="100%" height="100%" scrolling="yes" style="overflow: hidden"></iframe>   
+    </center>
+    
+    <south id="s" size="40px" border="0" style="background: none repeat scroll 0 0 ;">
+        <toolbar mold="panel" align="center">
+            <separator orient="vertical" bar="true"/>
+            <label value=" &#169; 2014 Dot.Rural Digital Economy Research, University of Aberdeen. "/>
+            <separator orient="vertical" bar="true"/>
+            <toolbarbutton id="terms2" label="Disclaimer"/>
+            <separator orient="vertical" bar="true"/>
+            <toolbarbutton id="privacyPolicy" label="Privacy Policy"/>
+            <separator orient="vertical" bar="true"/>
+        </toolbar>
+    </south>
+</borderlayout>
+</zk>
+

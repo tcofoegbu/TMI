@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-collections-2.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-concurrent-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-i18n-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-io-2.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-iteration-2.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-lang-2.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-net-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-text-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/aduna-commons-xml-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/channel_iface_impl_stub-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/platform-api-0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-http-client-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-http-protocol-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-model-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-query-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-queryalgebra-evaluation-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-queryalgebra-model-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-queryparser-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-queryparser-serql-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-queryparser-sparql-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-queryresultio-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-queryresultio-binary-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-rio-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-rio-n3-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-rio-ntriples-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-rio-rdfxml-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-rio-trig-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-rio-trix-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/sesame-rio-turtle-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/charles/Downloads/kim-api-dependencies-3.0/kim-api-dependencies/slf4j-api-1.5.10.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/java/tools/kim-platform-3.7/lib/kim-corpora-3.7.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/java/tools/kim-platform-3.7/lib/kim-gate-3.7.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/java/tools/kim-platform-3.7/lib/kim-plugin-api-3.7.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

@@ -1,0 +1,38 @@
+<?page id="TweetDesk" title="IRP Twitter Data Minning and Analysis"?>
+<zk xmlns="http://www.zkoss.org/2005/zul"
+    xmlns:h="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
+    <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
+    <vbox height="100%" width="100%" pack="center" align="center">
+        <div height="100%" width="100%" align="center">
+        <div>
+            <window id="loginwin" title="TweetDesk" border="3d" width="350px">
+                <caption image="/images/lock.png"/>
+                <style>
+                    body { padding: 0 0; background-image:url(${c:encodeURL('/images/wallpaper.jpg')});background-position: center center; border: 'none'; background-repeat:no-repeat; /* 0 padding
+                    on top and bottom and 0 padding on right and left */ }
+                </style>
+                <!-- this form-login-page form is also used as the form-error-page to ask for a login again. -->
+                <html style="color:red;" if="${not empty param.login_error}">
+                <![CDATA[
+                  <b>Your login attempt was not successful, try again.</b><br/><br/>
+                 <b> Reason: ${SPRING_SECURITY_LAST_EXCEPTION.message}</b>
+                 ]]>
+                </html>
+                <h:form id="f" name="f" action="j_spring_security_check" method="POST"    xmlns:h="native">
+                    <grid>
+                        <rows>
+                            <row>Username:<textbox id="u" name="j_username"/></row>
+                            <row>Password:<textbox id="p" type="password" name="j_password"/></row>
+                            
+                            <row spans="2"><hbox><h:input type="submit" value="Login"/></hbox></row>
+                        </rows>
+                    </grid>
+                </h:form>
+            </window>
+            </div>
+            
+        </div>
+    </vbox>
+</zk>

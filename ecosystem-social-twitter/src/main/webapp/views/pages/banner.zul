@@ -1,0 +1,13 @@
+<html>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<body>
+<div style="width: 100%;height:90px">
+	<img src="images/tweet_desk_banner.png" align="left"/>
+	<img src="images/dot_rural.png" align="right"/>
+</div>
+<div style="background-image:url(images/banner_bar.png); background-repeat:repeat-x; width: 100%; margin:0px; font-size:50%">
+	&#160;
+</div>
+
+</body>
+</html> 

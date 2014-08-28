@@ -1,0 +1,12 @@
+<div id="menu" apply="uk.ac.dotrural.tweetdesk.controller.UserSpaceController" align="right">
+    <menubar>
+    	<menuitem id="currUser" label="" > </menuitem> 
+	    	<menu id="Action" label="Action">
+	            <menupopup>
+	                <menuitem id="help" tooltiptext="Find help" label="Help"/><menuseparator/>
+	                <menuitem id="about" tooltiptext="About" label="About"/><menuseparator/>
+	                <menuitem tooltiptext="Logout" label="Logout" href="/logout"/>
+	             </menupopup>
+	        </menu>
+     </menubar>
+</div>

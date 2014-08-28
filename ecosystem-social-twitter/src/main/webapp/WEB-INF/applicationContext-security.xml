@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - Sample namespace-based configuration
+  -
+  - $Id: applicationContext-security.xml 3019 2008-05-01 17:51:48Z luke_t $
+  -->
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
+    <global-method-security secured-annotations="enabled">
+		<!-- AspectJ pointcut expression that locates our "post" method and applies security that way
+		<protect-pointcut expression="execution(* bigbank.*Service.post*(..))" access="ROLE_TELLER"/>
+		-->
+    </global-method-security>
+    <http auto-config="true"  use-expressions="true">
+        <intercept-url pattern="/**" access="permitAll" />
+        <intercept-url pattern="/index.zul*" access="permitAll"/>
+        <intercept-url pattern="/error.zul*" access="permitAll"/>		
+        <intercept-url pattern="/TweetDesk/*" access="permitAll"/>
+        <intercept-url pattern="/views/pages/UserSpace.zul" access="hasRole('admin')" />
+        <intercept-url pattern="/views/pages/" access="hasRole('admin')" />	
+        <form-login login-page="/" authentication-failure-url="/?login_error=1" default-target-url="/secure" />
+		<logout logout-url="/logout" logout-success-url="/" invalidate-session="true"/>
+       <!-- <concurrent-session-control max-sessions="1" exception-if-maximum-exceeded="true"/>-->
+    </http>   
+  <authentication-manager>
+  <authentication-provider>
+        <jdbc-user-service data-source-ref="myDataSource" users-by-username-query="${select-user}" authorities-by-username-query="${select-user-role}"/>
+   </authentication-provider>
+  </authentication-manager>
+</beans:beans>
+
+
+
+  

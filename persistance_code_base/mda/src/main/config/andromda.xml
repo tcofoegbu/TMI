@@ -1,0 +1,85 @@
+<andromda>
+    <properties>
+        <property name="modelValidation">${validation}</property>
+        <property name="cartridgeFilter">${filter}</property>
+    </properties>
+    <server>
+        <host>localhost</host>
+        <port>4447</port>
+    </server>
+    <repositories>
+        <repository name="netBeansMDR">
+            <models>
+                <model>
+                    <uri>${model.uri}</uri>
+                    <moduleSearchLocations>
+                         <location patterns="**/*.xml.zip">${settings.localRepository}/org/andromda/profiles/uml14</location>
+                    </moduleSearchLocations>
+                </model>
+            </models>
+        </repository>
+    </repositories>
+    <namespaces>
+        <namespace name="default">
+            <properties>
+                <property name="languageMappingsUri">Java</property>
+                <property name="wrapperMappingsUri">JavaWrapper</property>
+                <property name="sqlMappingsUri">${sql.mappings}</property>
+                <property name="jdbcMappingsUri">JDBC</property>
+                <property name="maxSqlNameLength">30</property>
+                <property name="foreignKeySuffix">_FK</property>
+                <property name="ejbJndiNamePrefix">${application.id}-${pom.version}</property>
+                 <!-- these masking properties allow you to configure the way
+                      your model element names are generated -->
+                <property name="classifierNameMask">none</property>
+                <property name="operationNameMask">none</property>
+                <property name="roleNameMask">none</property>
+                <property name="enumerationNameMask">none</property>
+                <property name="enumerationLiteralNameMask">upperunderscore</property>
+                <property name="entityNameMask">none</property>
+                <property name="entityPropertyNameMask">none</property>
+                <property name="parameterNameMask">none</property>
+            </properties>
+        </namespace>
+        <namespace name="hibernate">
+            <properties>
+                <property name="mergeLocation">${project.basedir}/src/customTemplates</property>
+                <property name="hibernateVersion">3</property>
+                <property name="hibernateTypeMappingsUri">Hibernate</property>
+                <property name="dataSource">${dataSource}</property>
+                <property name="hibernateShowSql">${hibernate.db.showSql}</property>
+                <property name="hibernateDialect">${hibernate.dialect}</property>
+                <property name="hibernateInheritanceStrategy">${hibernate.inheritance.strategy}</property>
+                <property name="hibernateTransactionManagerLookup">${hibernate.transaction.manager.lookup}</property>
+                <property name="customTypesPackage">${application.package}</property>
+                <property name="hibernateJdbcBatchSize">0</property>
+                <property name="hibernateEnableCache">false</property>
+                <property name="hibernateEnableAssociationsCache">false</property>
+                <property name="hibernateQueryUseNamedParameters">true</property>
+                <property name="compositionDefinesEagerLoading">true</property>
+                <property name="hibernateCacheProvider">org.hibernate.cache.EhCacheProvider</property>
+                <property name="hibernateQueryCacheFactory">org.hibernate.cache.StandardQueryCacheFactory</property>
+                <property name="hibernateTransactionFactoryClass">org.hibernate.transaction.JTATransactionFactory</property>
+                <property name="entities">${common.generated.dir}</property>
+                <property name="entity-impls">${core.manual.dir}</property>
+                <property name="entity-mappings">${core.generated.dir}</property>
+                <property name="user-types">${core.generated.dir}</property>
+                <property name="session-beans">${core.generated.dir}</property>
+                <property name="session-impls">${core.manual.dir}</property>
+                <property name="configuration">${core.generated.dir}</property>
+                <property name="cache">${core.generated.dir}</property>
+                <!-- uncomment to enable EJB security
+                <property name="securityRealm">${application.id}</property>
+                -->
+            </properties>
+        </namespace>
+        <namespace name="java">
+            <properties>
+                <property name="enumerations">${common.generated.dir}</property>
+                <property name="exceptions">${common.generated.dir}</property>
+                <property name="value-objects">${common.generated.dir}</property>
+                <property name="interfaces">${common.generated.dir}</property>
+            </properties>
+        </namespace>
+    </namespaces>
+</andromda>
